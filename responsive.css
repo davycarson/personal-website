@@ -1,0 +1,129 @@
+@media screen and (min-width: 480px) {
+ 
+/***************************
+TWO COLUMN LAYOUT
+***************************/
+
+
+#primary {
+  width: 50%;
+  float: left;
+  }
+
+
+#secondary {
+  width: 40%;
+  float: right;
+  }
+  
+  #primaryWRK {
+  margin: 0 0 0 2%;
+  width: 50%;
+  float: left;
+  }
+
+
+#secondaryWRK {
+margin: 0 0 0 2%;
+  width: 40%;
+  float: right;
+  }
+
+  
+/***************************
+THREE COLUMN LAYOUT
+***************************/
+ 
+  #primaryEDU {
+  width: 25%;
+  padding: 4%;
+  float: left;
+  }
+  
+  #secondaryEDU {
+  width: 25%;
+  padding: 4%;
+  float: left;
+  }
+  
+  #tertiaryEDU {
+  width: 25%;
+  padding: 4%;
+  float: left;
+  }
+ 
+/***************************
+PAGE: INDEX
+***************************/
+
+#gallery li {
+  width: 28.3333%;
+  }
+
+#gallery li:nth-child(4n) {
+  clear: left;
+  } 
+
+/***************************
+PAGE: ABOUT
+***************************/
+
+.profile-picture {
+  float: left;
+  margin: 0 5% 80px 0;
+  }
+
+
+#secondary2 {
+  margin: 11px;
+  }    
+
+}
+
+/***************************
+PAGE: SPORTS
+***************************/
+
+.sports-picture {
+  float: left;
+  margin: 0 5% 80px 0;
+  }
+
+
+@media screen and (min-width: 660px) {
+  
+ 
+
+/***************************
+HEADER
+***************************/
+
+nav {
+  background: none;
+  float: right;
+  font-size: 1.125em;
+  margin-right: 10%;
+  text-align: right;
+  width: 50%;
+  }
+  
+ #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  header {
+    border-bottom: 5px solid #599a68;
+    margin-bottom: 60px;
+  }
+}
