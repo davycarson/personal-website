@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>David Carson | Online Website</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Rock+Salt%7CBree+Serif:400%7COpen+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <h1>David Carson</h1>
+        <h2>Pre-Masters Computing | Hockey Player</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sports.html">Sports</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html" class="selected">Contact</a></li>
+          
+        </ul> 
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section id="primary">
+        <h3>Contact Details</h3>
+          <ul class="contact-info">
+            <li class="phone"><a href="tel:(+353) 86-3556612">(+353) 86-3556612</a></li>
+            <li class="mail"><a href="mailto:davy-carson@hotmail.com">davy-carson@hotmail.com</a></li>
+            <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=davycarson">@davycarson</a></li>
+          </ul>
+      </section>
+      <!---------- OWN CODE, taken from Javascript for beginners, code altered by myself -------->
+      <section id="secondary">
+      <h3>Ask Question</h3>
+
+      <script>
+		function emailchk()
+{
+		var x=document.feedback.email.value
+		if (x.indexOf("@")==-1)
+{
+		alert("You have entered an invalid email address.")
+		document.feedback.email.focus()
+}
+}
+	  </script>
+      <form name="feedback">
+
+		Email Address: <input type="text" size="20" name="email" onblur="emailchk()">
+<br>
+<br>
+		Question: <textarea name="comment" rows="5" cols="24"></textarea>
+<br>
+<CENTER>
+		<input type="submit" value=" Submit ">
+		</CENTER>
+	  </form>
+      </section>
+      <!---------- OWN CODE, taken from Javascript for beginners, code altered by myself -------->
+      <footer>
+<!------ Javascript code for Date and Time, taken from htmlgoodies.com ------->
+      <section>
+    		<SCRIPT LANGUAGE="JavaScript">
+				var now = new Date();
+
+				var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+
+				var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+				var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+
+				function fourdigits(number)	{
+					return (number < 1000) ? number + 1900 : number;
+								}
+				today =  days[now.getDay()] + ", " +
+        	 	months[now.getMonth()] + " " +
+         		date + ", " +
+         		(fourdigits(now.getYear())) ;
+
+				document.write(today);
+			</script>
+	</section>
+<!-------- Javascript code for Date and Time, taken from htmlgoodies.com -------->
+<br>
+        <a href="http://www.hockey.ie/playerProfile/4447/david_carson"><img src="img/irelandgreen.jpg" alt="ireland logo" class="social-icon"></a>
+        <a href="http://twitter.com/davycarson"><img src="img/twitterblue.png" alt="twitter logo" class="social-icon"></a>
+        <a href="https://www.youtube.com/watch?v=8p5QIHYoGUM"><img src="img/youtube.png" alt="youtube logo" class="social-icon"></a>
+        <a href="https://ie.linkedin.com/in/david-carson-233b3177"><img src="img/linkedin.png" alt="linkedin logo" class="social-icon"></a>
+        <p>&copy; 2015 David Carson.</p>
+      </footer>
+    </div>
+  </body>
+</html>
